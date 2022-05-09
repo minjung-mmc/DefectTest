@@ -16,7 +16,6 @@ jupyter notebook
 ``` bash
 conda create -n waymococo python=3.7
 conda activate waymococo
-pip install tensorflow==2.1.0
 git clone https://github.com/shinya7y/WaymoCOCO.git
 cd WaymoCOCO
 ```
