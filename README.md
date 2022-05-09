@@ -18,4 +18,25 @@ conda create -n waymococo python=3.7
 conda activate waymococo
 git clone https://github.com/shinya7y/WaymoCOCO.git
 cd WaymoCOCO
+
+``` bash
+# convert val
+python convert_waymo_to_coco.py \               
+    --tfrecord_dir ${HOME}/data/waymotfrecord/validation/ \
+    --work_dir ${HOME}/data/waymococo_full/ \
+    --image_dirname val2020 \
+    --image_filename_prefix val \
+    --label_filename instances_val2020.json \
+    --add_waymo_info
+```
+
+``` bash
+# with frames_with_keypoints.tfrecord in waymo_open_dataset
+python convert_waymo_to_coco.py \			
+    --tfrecord_dir ./data/ \
+    --work_dir ./data/waymococo_full/ \
+    --image_dirname train2020 \
+    --image_filename_prefix train \
+    --label_filename instances_train2020.json \
+    --add_waymo_info
 ```
