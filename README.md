@@ -31,7 +31,7 @@ python convert_waymo_to_coco.py \
 ```
 
 ``` bash
-# with frames_with_keypoints.tfrecord in waymo_open_dataset
+# with frames_with_keypoints.tfrecord in waymo_open_dataset/tutorial
 python convert_waymo_to_coco.py \			
     --tfrecord_dir ./data/ \
     --work_dir ./data/waymococo_full/ \
